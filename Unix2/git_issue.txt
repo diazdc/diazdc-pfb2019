@@ -1,0 +1,27 @@
+Please make sure you have the correct access rights
+and the repository exists.
+(base) mp192pahv2vf:diazdc-pfb2019 ddiaz$ git remote -v
+origin  git@github.com:diazdc/diazdc-pfb2019.git (fetch)
+origin  git@github.com:diazdc/diazdc-pfb2019.git (push)
+(base) mp192pahv2vf:diazdc-pfb2019 ddiaz$ git remote --help
+(base) mp192pahv2vf:diazdc-pfb2019 ddiaz$ git remote set-url origin https://github.com/diazdc/diazdc-pfb2019.git
+(base) mp192pahv2vf:diazdc-pfb2019 ddiaz$ git remote -v
+origin  https://github.com/diazdc/diazdc-pfb2019.git (fetch)
+origin  https://github.com/diazdc/diazdc-pfb2019.git (push)
+(base) mp192pahv2vf:diazdc-pfb2019 ddiaz$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+(base) mp192pahv2vf:diazdc-pfb2019 ddiaz$     git push --set-upstream origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 474 bytes | 474.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/diazdc/diazdc-pfb2019.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+(base) mp192pahv2vf:diazdc-pfb2019 ddiaz$
