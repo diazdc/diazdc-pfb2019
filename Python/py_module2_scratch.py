@@ -18,21 +18,6 @@ elif 'TTT' in seq1:
 else:
     print('Joe')
 
-num = 5
-if num < 0:
-    print('negative')
-elif num == 0:
-    print('equal to 0')
-else:
-    print('positve')
-
-num = 5
-if num < 0:
-    print('negative')
-elif num == 0 :
-    print('equal to 0')
-elif num < 50:
-    print('less than 50')
 
 num = 6
 if num < 0:
@@ -40,10 +25,6 @@ if num < 0:
 elif num == 0:
     print('equal to 0')
 elif (num < 50) & (num % 2 == 0):
-    print('num is less than 50 and even')
-
-
-
-
+    print('num is positve, less than 50, and even')
 
 
