@@ -46,13 +46,13 @@ while counter <= 100:
     counter += 1
 
 # 5
-counter = 1
+counter = 1   
 factorial = 1
 while counter <= 1000:
     factorial *= counter
     counter += 1
 print(factorial)
-
+3
 # 6
 nums = [101,2,15,22,95,33,2,27,72,15,52]
 for i in nums:
@@ -97,5 +97,17 @@ for i in range(1,101):
         break
 
 # 11
+seqs = ['ATGCCCGGCCCGGC','GCGTGCTAGCAATACGATAAACCGG', 'ATATATATCGAT','ATGGGCCC']
+for i in seqs:
+    print(len(i), '\t', i)
 
+# 12
+seq_tups = [(len(i), i) for i in seqs]
+print(seq_tups)
+# >>> [(14, 'ATGCCCGGCCCGGC'), (25, 'GCGTGCTAGCAATACGATAAACCGG'), (12, 'ATATATATCGAT'), (8, 'ATGGGCCC')]
 
+# 13
+# 11
+seqs = ['ATGCCCGGCCCGGC','GCGTGCTAGCAATACGATAAACCGG', 'ATATATATCGAT','ATGGGCCC']
+for i in seqs:
+    print(len(i), '\t', i, '\t', seqs.index(i))
