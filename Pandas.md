@@ -1,11 +1,10 @@
-# Pandas 
-<div style="text-align: right"> when Excel fails </div>
+# Pandas
 
 ## What is pandas?
 
 **Python Data Analysis Library**
 
-A powerful library for manipulating data arranged in formats like matricies and data frames. It's arguably the most popular python library used for data analysis. Pandas aims to provide Python users the same type of functionality as the popular statiscal language, **R**.
+A powerful library for manipulating data arranged in formats like matricies and data frames. It's arguably the most popular Python library used for data analysis. Pandas aims to provide Python users the same type of functionality as the popular statiscal language, **R**.
 
 <br/>
 
@@ -18,7 +17,7 @@ A powerful library for manipulating data arranged in formats like matricies and 
 
 ### Matrices
 
-A matrix is an n x n data structure where numbers are arranged into rows and columns. They will typically conatin floats __or__ integers, but not both. Matrices are used when you need to perform mathmatical operations between complex data types.
+A matrix is an data structure where numbers are arranged into rows and columns. They will typically conatin floats __or__ integers, but not both. Matrices are used when you need to perform mathmatical operations between complex data sets.
 
 <br/>
 
@@ -28,11 +27,11 @@ A matrix is an n x n data structure where numbers are arranged into rows and col
 
 ### Data frames
 
-A data frame is a table-like data structure and can cotain mixed data types (strings, floats, integers, etc.).
+A data frame is a table-like data structure and can cotain mixed data types (strings, floats, integers, etc.). 
 
 <br/>
 
-![](https://media.geeksforgeeks.org/wp-content/uploads/pandas_pop2.jpg)
+![](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0161567.t005&type=large)
 
 <br/>
 
