@@ -8,6 +8,10 @@ A powerful tool for manipulating data arranged in formats like matricies and dat
 
 ## Types of data manipulated
 
+### Matrices
+
+A matrix is a two-dimensional data structure where numbers are arranged into rows and columns. Typically they will __only__ conatin floats or integers.
+
 ### Data frames
 
 A data frame is a table-like data structure which cotain mixed data types (strings, floats, integers, etc.)
