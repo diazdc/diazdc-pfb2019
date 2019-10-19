@@ -6,4 +6,8 @@
 
 A powerful tool for manipulating data arranged in formats like matricies and data frames. Pandas aims to provide the same type of functionality and analysis as **R**.
 
+## Types of data manipulated
+
+A data frame is a table-like data structure which cotain mixed data types.
+
 
