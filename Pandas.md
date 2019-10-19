@@ -14,7 +14,9 @@ A powerful library for manipulating data arranged in formats like matricies and 
 
 ### Why familiarize yourself with Pandas?
 
-So far we've discussed building multidimensional objects like lists of lists and dictionaries of dictionaries from raw data. However, bioinformatics modules (and many others) will often **return** results in the form of Pandas **data frame** or **a matrix**. Further manipulation of these results will require some degree of Pandas operations. For example, you might need parse your RNA-seq results by a range of log fold changes and/or p-values.
+So far we've discussed building multidimensional objects like lists of lists and dictionaries of dictionaries from raw data. However, bioinformatics modules (and many others) will often **return** results in the form of Pandas **data frame** or **a matrix**. Further manipulation of these results will require some degree of Pandas operations.
+
+For example, you might need parse your RNA-seq results by a range of log fold changes and/or p-values. You can apply your knowledge of Python operators such as `>, <, ==, and, or, ...` to subset a data frame a reasonable size, and then export that object to an excel file (for your non-programmer friends).
 
 
 
