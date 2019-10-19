@@ -16,7 +16,7 @@ A powerful library for manipulating data arranged in formats like matricies and 
 
 So far we've discussed building multidimensional objects like lists of lists and dictionaries of dictionaries from raw data. However, bioinformatics modules (and many others) will often **return** results in the form of Pandas **data frame** or **a matrix**. Further manipulation of these results will require some degree of Pandas operations.
 
-For example, you might need parse your RNA-seq results by a range of log fold changes and/or p-values. You can apply your knowledge of Python operators such as `>, <, ==, and, or, ...` to subset a data frame a reasonable size, and then export that object to an excel file (for your non-programmer friends).
+For example, you might need parse your RNA-seq results by a range of log fold changes and/or p-values. You can apply your knowledge of Python operators such as `>, <, ==, and, or, ...` to subset a data frame a to reasonable size, and then export that object to an Excel file (for your non-programmer friends).
 
 
 
@@ -46,16 +46,14 @@ A data frame is a table-like data structure and can cotain mixed data types (str
 
 <br/>
 
-## A breif word on vectorization
+## A brief word on vectorization
 
-**Pandas, like R, works most efficiently with vectorized operations**
-
+**Pandas, like R, works most efficiently with vectorized operations**<br/>
 <br/>
-
 This topic can get quite complicated, so here's what you need to know:
 The most efficent way to perform operations is across entire rows or columns (vectors), rather than each individual units.
 
-Rather that looping through individual values (scalars), we _apply_ operations to a list 
+Rather that looping through individual values (scalars), we _apply_ operations to arrays (referred to a vectors when processed as a single unit). An array in Python is es
 
 If you frequently work dataframes or matricies, please consider reading this 
 [article](https://engineering.upside.com/a-beginners-guide-to-optimizing-pandas-code-for-speed-c09ef2c6a4d6).
