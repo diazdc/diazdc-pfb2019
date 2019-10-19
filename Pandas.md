@@ -14,9 +14,9 @@ A powerful library for manipulating data arranged in formats like matricies and 
 
 ### Why familiarize yourself with Pandas?
 
-So far we've discussed bulding multidimensional objects like lists of lists and dictionaries of dictionaries from raw data. However, bioinformatics modules (and many others) will often **return** results in the form of **data frame** or **a matrix**.
+So far we've discussed bulding multidimensional objects like lists of lists and dictionaries of dictionaries from raw data. However, bioinformatics modules (and many others) will often **return** results in the form of **data frame** or **a matrix**. For example, you might need parse your RNA-seq results by a range of log fold changes or p-values.
 
-For example, you might need parse your RNA-seq results by a range of log fold changes or p-values.
+<br/>
 
 ## Types of data manipulated in Pandas
 
