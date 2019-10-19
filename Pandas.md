@@ -4,9 +4,7 @@
 
 **Python Data Analysis Library**
 
-A powerful library for manipulating data arranged in formats like matricies and data frames. It's arguably the most popular python library used for data analysis. Pandas aims to provide the same type of functionality and analysis as **R**.
-
-Pandas is incredibly useful if you do any type of statisics or machine learning, and importantly, you can apply your newly aquired python skills .
+A powerful library for manipulating data arranged in formats like matricies and data frames. It's arguably the most popular python library used for data analysis. Pandas aims to provide Python users the same type of functionality as **R**
 
 <br/>
 
