@@ -8,6 +8,8 @@ A powerful tool for manipulating data arranged in formats like matricies and dat
 
 ## Types of data manipulated
 
-A data frame is a table-like data structure which cotain mixed data types.
+### Data frames
+
+A data frame is a table-like data structure which cotain mixed data types (strings, floats, integers, etc.)
 
 
