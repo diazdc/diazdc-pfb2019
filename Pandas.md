@@ -49,9 +49,12 @@ A data frame is a table-like data structure and can cotain mixed data types (str
 ## A brief word on vectorization
 
 **Pandas, like R, works most efficiently with vectorized operations**<br/>
+
 <br/>
-This topic can get quite complicated, so here's what you need to know:
-The most efficent way to perform operations is across entire rows or columns (vectors), rather than each individual units.
+
+This topic can get quite complicated, so here's a summary of what you need to know:
+    * The most efficent way to perform operations is across entire rows or columns (vectors), rather than each individual units.
+    * A vector (also called an array) can be thought of as a list that only contains a single data type.
 
 Rather that looping through individual values (scalars), we _apply_ operations to arrays (referred to a vectors when processed as a single unit). An array in Python is es
 
