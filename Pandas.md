@@ -9,7 +9,9 @@ A powerful library for manipulating data arranged in formats like matricies and 
 Pandas is incredibly useful if you do any type of statisics or machine learning, and importantly, you can apply your newly aquired python skills .
 
 <br/>
+
 ![](https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/sites/2/2019/04/Python-Pandas-Applications.jpg)
+
 <br/>
 
 
