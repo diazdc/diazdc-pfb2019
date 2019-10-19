@@ -12,7 +12,11 @@ A powerful library for manipulating data arranged in formats like matricies and 
 
 <br/>
 
-So far we've discussed bulding multidimensional objects like lists of lists and dictionaries of dictionaries from raw data. However, analysis modules will often **return** data in the form of **data frame** or **a matrix**.
+### Why familiarize yourself with Pandas?
+
+So far we've discussed bulding multidimensional objects like lists of lists and dictionaries of dictionaries from raw data. However, bioinformatics modules (and many others) will often **return** results in the form of **data frame** or **a matrix**.
+
+For example, 
 
 ## Types of data manipulated in Pandas
 

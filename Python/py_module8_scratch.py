@@ -25,7 +25,7 @@ seqs['geneB']['C'] = 2
 import sys
 
 fasta_filename = sys.argv[1]
-fasta_filename = 'Python_08.fasta'
+fasta_filename = 'Python_08_short.fasta'
 fasta_filehandle = open(fasta_filename, 'r')
 sequence_composition = dict()
 sequence_id = None
@@ -40,6 +40,7 @@ for line in fasta_filehandle:
     else:
         for nucleotide in line:
             sequence_composition[sequence_id][nucleotide] += 1
+            print(sequence_composition)
 
 print("seqName\tA_count\tT_count\tG_count\tC_count")
 
