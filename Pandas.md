@@ -39,10 +39,12 @@ A data frame is a table-like data structure and can cotain mixed data types (str
 
 <br/>
 
-This topic can get a bit complicated, so here's there short answer
-In Pandas, the most efficent way to perform operations across rows or columns, 
+This topic can get a bit complicated, so here's there short answer:
+In Pandas, the most efficent way to perform operations is rows or columns, rather than each individual.
 
-Details can be found [here](https://engineering.upside.com/a-beginners-guide-to-optimizing-pandas-code-for-speed-c09ef2c6a4d6)
+Details can be found [here](https://engineering.upside.com/a-beginners-guide-to-optimizing-pandas-code-for-speed-c09ef2c6a4d6) and [here](https://stackoverflow.com/questions/35091979/why-is-vectorization-faster-in-general-than-loops)
+
+![](https://miro.medium.com/max/2060/1*p4zjrqG97C4bFmOXU5UQog.png)
 
 ### Pandas has the ability to read in various data formats
 
