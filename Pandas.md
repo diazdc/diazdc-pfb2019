@@ -27,7 +27,7 @@ A matrix is an data structure where numbers are arranged into rows and columns. 
 
 ### Data frames
 
-A data frame is a table-like data structure and can cotain mixed data types (strings, floats, integers, etc.). 
+A data frame is a table-like data structure and can cotain mixed data types (strings, floats, integers, etc.). This is the type of data you're probably used seeing in Excel.
 
 <br/>
 
