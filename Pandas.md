@@ -20,9 +20,9 @@ A data frame is a table-like data structure which cotain mixed data types (strin
 
 ### Pandas has the ability to read in various data formats
 
--Open a local file using Pandas, usually a CSV file, but could also be a delimited text file (like TSV), Excel, etc
+- Open a local file using Pandas, usually a CSV file, but could also be a delimited text file (like TSV), Excel, etc
 
--Open a remote file or database like a CSV or a JSONon a website through a URL or read from a SQL table/database
+- Open a remote file or database like a CSV or a JSONon a website through a URL or read from a SQL table/database
 
 ## Reading in csv files
 
