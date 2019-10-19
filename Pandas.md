@@ -12,6 +12,7 @@ A powerful library for manipulating data arranged in formats like matricies and 
 
 <br/>
 
+So far we've discussed bulding multidimensional objects like lists of lists and dictionaries of dictionaries from raw data. However, analysis modules will often **return** data in the form of **data frame** or **a matrix**.
 
 ## Types of data manipulated in Pandas
 
@@ -35,14 +36,21 @@ A data frame is a table-like data structure and can cotain mixed data types (str
 
 <br/>
 
-## Pandas, like R, works most efficiently with vectorized operations
+## A breif word on vectorization
+
+**Pandas, like R, works most efficiently with vectorized operations**
 
 <br/>
 
-This topic can get a bit complicated, so here's what you need to know:
+This topic can get quite complicated, so here's what you need to know:
 The most efficent way to perform operations is across entire rows or columns (vectors), rather than each individual units.
 
-Details can be found [here](https://engineering.upside.com/a-beginners-guide-to-optimizing-pandas-code-for-speed-c09ef2c6a4d6) and [here](https://stackoverflow.com/questions/35091979/why-is-vectorization-faster-in-general-than-loops)
+Rather that looping through individual values (scalars), we _apply_ operations to a list 
+
+If you frequently work dataframes or matricies, please consider reading this 
+[article](https://engineering.upside.com/a-beginners-guide-to-optimizing-pandas-code-for-speed-c09ef2c6a4d6).
+
+[here](https://stackoverflow.com/questions/35091979/why-is-vectorization-faster-in-general-than-loops)
 
 ![](https://miro.medium.com/max/2060/1*p4zjrqG97C4bFmOXU5UQog.png)
 
