@@ -4,6 +4,6 @@
 
 **Python Data Analysis Library**
 
-A powerful tool for manipulating data arranged in formats like matricies and data frames. Pandas aims to provide the same type of functionality as **R**
+A powerful tool for manipulating data arranged in formats like matricies and data frames. Pandas aims to provide the same type of functionality and analysis as **R**.
 
-If you are familiar with **R**, 
+
