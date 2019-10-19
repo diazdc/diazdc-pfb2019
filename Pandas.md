@@ -46,13 +46,13 @@ Details can be found [here](https://engineering.upside.com/a-beginners-guide-to-
 
 ![](https://miro.medium.com/max/2060/1*p4zjrqG97C4bFmOXU5UQog.png)
 
-### Pandas has the ability to read in various data formats
+## Pandas has the ability to read in various data formats
 
 - Open a local file using Pandas, usually a CSV file, but could also be a delimited text file (like TSV), Excel, etc
 
 - Open a remote file or database like a CSV or a JSONon a website through a URL or read from a SQL table/database
 
-## Reading in csv files
+### Reading in csv files
 
 ```
 pandas.read_csv()
