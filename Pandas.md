@@ -23,7 +23,11 @@ A matrix is a two-dimensional data structure where numbers are arranged into row
 
 A data frame is a table-like data structure which cotain mixed data types (strings, floats, integers, etc.).
 
+<br/>
+
 ## Pandas, like R, uses vectorized operations
+
+<br/>
 
 This topic can get a bit complicated, so here's there short answer
 In Pandas, the most efficent way to perform operations across rows or columns, 
