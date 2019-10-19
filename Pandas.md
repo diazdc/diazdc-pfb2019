@@ -1,5 +1,5 @@
 # Pandas 
-                                                    (_when Excel fails_)
+<div style="text-align: right"> when Excel fails </div>
 
 ## What is pandas?
 
