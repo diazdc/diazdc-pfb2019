@@ -4,7 +4,7 @@
 
 **Python Data Analysis Library**
 
-A powerful tool for manipulating data arranged in formats like matricies and data frames. It's arguably the most popular python library used for data analysis. Pandas aims to provide the same type of functionality and analysis as **R**.
+A powerful library for manipulating data arranged in formats like matricies and data frames. It's arguably the most popular python library used for data analysis. Pandas aims to provide the same type of functionality and analysis as **R**.
 
 ![](https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/sites/2/2019/04/Python-Pandas-Applications.jpg)
 
@@ -17,6 +17,12 @@ A matrix is a two-dimensional data structure where numbers are arranged into row
 ### Data frames
 
 A data frame is a table-like data structure which cotain mixed data types (strings, floats, integers, etc.). 
+
+### Pandas has the ability to read in various data formats
+
+-Open a local file using Pandas, usually a CSV file, but could also be a delimited text file (like TSV), Excel, etc
+
+-Open a remote file or database like a CSV or a JSONon a website through a URL or read from a SQL table/database
 
 ## Reading in csv files
 
