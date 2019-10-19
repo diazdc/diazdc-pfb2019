@@ -1,4 +1,5 @@
-# Pandas (when Excel fails)
+# Pandas 
+(when Excel fails)
 
 ## What is pandas?
 
@@ -13,11 +14,11 @@ A powerful library for manipulating data arranged in formats like matricies and 
 <br/>
 
 
-## Types of data manipulated
+## Types of data manipulated in Pandas
 
 ### Matrices
 
-A matrix is a two-dimensional data structure where numbers are arranged into rows and columns. They will typically conatin floats __or__ integers, but not both.
+A matrix is an n x n data structure where numbers are arranged into rows and columns. They will typically conatin floats __or__ integers, but not both. Matrices are used when you need to perform mathmatical operations between complex data types.
 
 <br/>
 
