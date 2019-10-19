@@ -8,6 +8,9 @@ A powerful library for manipulating data arranged in formats like matricies and 
 
 ![](https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/sites/2/2019/04/Python-Pandas-Applications.jpg)
 
+
+Pandas is incredibly useful if you do any type of statisics or machine learning.
+
 ## Types of data manipulated
 
 ### Matrices
