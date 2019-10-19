@@ -1,4 +1,4 @@
-# Pandas
+# Pandas (when Excel fails)
 
 ## What is pandas?
 
@@ -18,6 +18,12 @@ A powerful library for manipulating data arranged in formats like matricies and 
 ### Matrices
 
 A matrix is a two-dimensional data structure where numbers are arranged into rows and columns. They will typically conatin floats __or__ integers, but not both.
+
+<br/>
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Gene_co-expression_network_construction_steps.png/720px-Gene_co-expression_network_construction_steps.png)
+
+<br/>
 
 ### Data frames
 
