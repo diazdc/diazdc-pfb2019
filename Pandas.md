@@ -21,7 +21,11 @@ A matrix is a two-dimensional data structure where numbers are arranged into row
 
 ### Data frames
 
-A data frame is a table-like data structure which cotain mixed data types (strings, floats, integers, etc.).
+A data frame is a table-like data structure and can cotain mixed data types (strings, floats, integers, etc.).
+
+<br/>
+
+![](https://media.geeksforgeeks.org/wp-content/uploads/pandas_pop2.jpg)
 
 <br/>
 
