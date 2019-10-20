@@ -78,7 +78,6 @@ GTCATCTTCT
 """
 #!/usr/bin/env python3
 
-
 def fold_sequence(linear_sequence):
     linear_sequence = linear_sequence.replace('\n', '')    
 

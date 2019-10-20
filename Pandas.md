@@ -16,11 +16,7 @@ A powerful library for manipulating data arranged in formats like matricies and 
 
 So far we've discussed building multidimensional objects like lists of lists and dictionaries of dictionaries from raw data. However, bioinformatics modules (and many others) will often **return** results in the form of Pandas **data frame** or **a matrix**. Further manipulation of these results will require some degree of Pandas operations.
 
-For example, you might need parse your RNA-seq results by a range of log fold changes and/or p-values. You can apply your knowledge of Python operators such as `>, <, ==, and, or, ...` to subset a data frame a to reasonable size, and then export that object to an Excel file (for your non-programmer friends).
-
-
-
-
+For example, lets say you want to parse your RNA-seq results to a list of genes within a specific range of p-values and log fold changes, like "all p-values less than 1e-15 and log fold changes greater than 1.2". You can apply your knowledge of Python operators such as `and, >, <` to subset a data frame based on the afformentioned parameters.
 
 <br/>
 
@@ -48,15 +44,13 @@ A data frame is a table-like data structure and can cotain mixed data types (str
 
 ## A brief word on vectorization
 
-**Pandas, like R, works most efficiently with vectorized operations**<br/>
+**Operations in Pandas, like R, work most efficiently when vectorized**<br/>
 
 <br/>
 
-This topic can get quite complicated, so here's a summary of what you need to know:
-    * The most efficent way to perform operations is across entire rows or columns (vectors), rather than each individual units.
-    * A vector (also called an array) can be thought of as a list that only contains a single data type.
+You can think of a vector (also reffered to as an [array](https://docs.python.org/3/library/array.html)) as a list that contains a single data type used. For matricies, this can be any row or column.
 
-Rather that looping through individual values (scalars), we _apply_ operations to arrays (referred to a vectors when processed as a single unit). An array in Python is es
+Rather that looping through individual values (scalars), we _apply_ operations to vectors. That is, the vector is treated as a single object. 
 
 If you frequently work dataframes or matricies, please consider reading this 
 [article](https://engineering.upside.com/a-beginners-guide-to-optimizing-pandas-code-for-speed-c09ef2c6a4d6).
@@ -74,7 +68,7 @@ If you frequently work dataframes or matricies, please consider reading this
 ### Reading in csv files
 
 ```
-pandas.read_csv()
+pandas.read_csv(./data)
 
 ```
 
