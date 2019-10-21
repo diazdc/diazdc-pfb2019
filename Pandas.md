@@ -54,7 +54,7 @@ A data frame is a table-like data structure and can cotain mixed data types (str
 
 <br/>
 
-You can think of a vector (also reffered to as an [array](https://docs.python.org/3/library/array.html)) as a type of list that contains a single data type. For matricies, this can be any row or column.
+You can think of a vector (also reffered to as an [array](https://docs.python.org/3/library/array.html)) as a type of list that contains a single data type and is optimized for parallel computing. For matricies and data frames, vectors are rows and columns.
 
 Rather that looping through individual values (scalars), we _apply_ operations to vectors. That is, the vector is treated as a single object. 
 
@@ -68,6 +68,7 @@ If you frequently work dataframes or matricies, please consider reading this art
 <br/>
 
 <img src="https://miro.medium.com/max/2060/1*p4zjrqG97C4bFmOXU5UQog.png" width="80%" height="80%" />
+
 Vectorization with Pandas series is **~390x** faster than crude looping
 
 <br/>
