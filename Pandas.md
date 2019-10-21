@@ -93,15 +93,36 @@ cell_attributes.head(10)
 ```
 
 Pandas has different methods for subsetting dataframes.
-We'll dicuss the most common methods, loc, and iloc
+We'll dicuss the most common methods, **loc**, and **iloc**
 
 loc allows us to subset data by row or column label. For example, if I would
 like to subset the column 'n_counts', I would use the following command:
 
 ```
-
+# The comma separates rows and columns, and the colon returns all rows.
+cell_attributes.loc[:,'n_counts']
 ```
 
+iloc allows up to subset rows and colums by index number. This is useful if we want to subset multiple rows or columns without typing index names. Lets say we want to remove the columns with names 'orig_ident', 'res_2', and 'louvain'.
+
+```
+# Return column names
+cell_attributes.columns.values
+cell_attributes.columns.values[[0,1,3,5,7]]
+```
+
+Now we can apply the same indexing pattern to our **iloc** method to return only the columns we're interested in. I've also included a few more slicing variations so you can get a feel for more complex slicing patterns.
+
+```
+# Return columns 0, 1, 3, 5, and 7
+cell_attributes.iloc[:,[0,1,3,5,7]].head(10)
+
+# Return rows 1 through 5 and columns 0, 1, 3, 5, and 7
+cell_attributes.iloc[:5,[0,1,3,5,7]].head(10)
+
+# Return rows 1 through 5, columns 1 through 3, and column 7
+cell_attributes.iloc[:5, 0:3 + 7].head(10)
+```
 
 
 
