@@ -53,9 +53,8 @@ You can think of a vector (also reffered to as an [array](https://docs.python.or
 Rather that looping through individual values (scalars), we _apply_ operations to vectors. That is, the vector is treated as a single object. 
 
 If you frequently work dataframes or matricies, please consider reading this 
-[article](https://engineering.upside.com/a-beginners-guide-to-optimizing-pandas-code-for-speed-c09ef2c6a4d6).
-
-[here](https://stackoverflow.com/questions/35091979/why-is-vectorization-faster-in-general-than-loops)
+[article](https://engineering.upside.com/a-beginners-guide-to-optimizing-pandas-code-for-speed-c09ef2c6a4d6) and this
+[stackoverflow thread](https://stackoverflow.com/questions/35091979/why-is-vectorization-faster-in-general-than-loops).
 
 ![](https://miro.medium.com/max/2060/1*p4zjrqG97C4bFmOXU5UQog.png)
 
