@@ -18,6 +18,12 @@ So far we've discussed building multidimensional objects like lists of lists and
 
 For example, lets say you want to parse your RNA-seq results to a list of genes within a specific range of p-values and log fold changes, like "all p-values less than `1e-15` and log fold changes greater than `1.2`". You can apply your knowledge of Python operators such as `and, >, <` to subset a data frame based on the afformentioned parameters.
 
+#### Pandas has the ability to read in various data formats
+
+- Open a local file using Pandas, usually a CSV file, but could also be a delimited text file (like TSV), Excel, etc
+
+- Open a remote file or database like a CSV or a JSONon a website through a URL or read from a SQL table/database
+
 <br/>
 
 ## Types of data manipulated in Pandas
@@ -39,14 +45,6 @@ A data frame is a table-like data structure and can cotain mixed data types (str
 <br/>
 
 ![](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0161567.t005&type=large)
-
-<br/>
-
-## Pandas has the ability to read in various data formats
-
-- Open a local file using Pandas, usually a CSV file, but could also be a delimited text file (like TSV), Excel, etc
-
-- Open a remote file or database like a CSV or a JSONon a website through a URL or read from a SQL table/database
 
 <br/>
 
