@@ -65,19 +65,40 @@ If you frequently work dataframes or matricies, please consider reading this
 
 - Open a remote file or database like a CSV or a JSONon a website through a URL or read from a SQL table/database
 
+
+# Basic methods for data manipulation
+
 ### Reading in csv files
 
 ```
-pandas.read_csv(./data)
+import pandas as pd
 
+cell_attributes = pd.read_csv("./meta_data.csv", index_col = 0)
+type(cell_attributes)
 ```
 
 
+```
+# We notice rows and columns are truncated with the dimensions given the bottom
+print(cell_attributes)
+
+# Change the output view options
+pd.set_option('display.max_rows', 100)
+pd.set_option('display.max_columns', 100)
+
+# Does this function seem familiar?
+cell_attributes.head(10)
+```
+
+Pandas has different methods for subsetting dataframes.
+We'll dicuss the most common methods, loc, and iloc
+
+loc allows us to subset data by row or column label. For example, if I would
+like to subset the column 'n_counts', I would use the following command:
 
 ```
 
 ```
-
 
 
 
