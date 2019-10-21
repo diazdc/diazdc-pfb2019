@@ -102,8 +102,6 @@ pd.set_option('display.max_columns', 100)
 cell_attributes.head(10)
 ```
 
-<br/>
-
 #### Slicing
 
 Pandas has different methods for subsetting dataframes.
