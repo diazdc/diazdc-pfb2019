@@ -58,6 +58,8 @@ If you frequently work dataframes or matricies, please consider reading this
 
 ![](https://miro.medium.com/max/2060/1*p4zjrqG97C4bFmOXU5UQog.png)
 
+<img src="https://miro.medium.com/max/2060/1*p4zjrqG97C4bFmOXU5UQog.png" width="75%" height="75%" />
+
 ## Pandas has the ability to read in various data formats
 
 - Open a local file using Pandas, usually a CSV file, but could also be a delimited text file (like TSV), Excel, etc
