@@ -118,7 +118,9 @@ cell_attributes.loc[:,'n_counts']
 
 <br/>
 
-iloc allows us to subset rows and colums by index number. This is useful if we want to subset multiple rows or columns without typing index names. Lets say we want to remove the columns with names 'orig_ident', 'res_2', and 'louvain'. Lets take a look at the column names first and see if we can slice out the ones we'd like to keep.
+iloc allows us to subset rows and colums by index number. This is useful if we want to subset multiple rows or columns without typing index names. Lets say we want to remove the columns with names 'orig_ident', 'res_2', and 'louvain'.
+
+Lets take a look at the column names first and see if we can slice out the ones we'd like to keep.
 
 <br/>
 
