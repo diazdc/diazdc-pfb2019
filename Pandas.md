@@ -4,7 +4,7 @@
 
 **Python Data Analysis Library**
 
-A powerful library for manipulating data arranged in formats like matricies and data frames. It's arguably the most popular Python library used for data analysis. Pandas aims to provide Python users the same type of functionality as the popular statiscal language, **R**.
+A powerful library for manipulating data arranged in formats like matricies and data frames. It's arguably the most popular Python library used for data analysis. Pandas aims to provide Python users the same type of functionality as the popular statistical language, **R**.
 
 <br/>
 
@@ -44,8 +44,6 @@ A data frame is a table-like data structure and can cotain mixed data types (str
 
 ## Pandas has the ability to read in various data formats
 
-<br/>
-
 - Open a local file using Pandas, usually a CSV file, but could also be a delimited text file (like TSV), Excel, etc
 
 - Open a remote file or database like a CSV or a JSONon a website through a URL or read from a SQL table/database
@@ -72,7 +70,9 @@ If you frequently work dataframes or matricies, please consider reading this
 
 ## Basic methods for data manipulation
 
-### Reading in csv files and basic slicing operations
+### Reading in csv files and row/column slicing
+
+"Slicing" refers to subsetting, or removing rows and columns from a data frame. Here we'll read in a data frame, look at the contents, and subset it by slicing out arbitrary regions.
 
 <br/>
 
@@ -81,6 +81,7 @@ import pandas as pd
 
 # Setting index_col to 0 tells us that the first column contains the row names
 cell_attributes = pd.read_csv("./meta_data.csv", index_col = 0)
+
 type(cell_attributes)
 ```
 
@@ -165,7 +166,38 @@ cell_df_sub.sort_values(by=['tree_ident', 'n_counts'], ascending=[True, False])
 
 ### Subsetting data by condition
 
-Understanding how to subset your data using conditional operations is very, _very_ useful. You'll often encounter situations where you want to filter your data on a certain set of parameters to reduce it to a more "meaningful" state (to make your PI happy).
+Understanding how to subset your data using conditional operations is very, _very_ useful. You'll often encounter situations where you want to filter your data on a certain set of parameters to reduce it to a more "meaningful" state (to make your PI happy). 
+
+Notice in the second example we're chaining together boolean operators to achieve results that satisfy multiple conditions. You can make these statments complex as you'd like.
+
+Note: Pandas uses a pipe symbol to represent "or", and an ampersand symbol to represent "and". The backslashes in code simply allow us to break up our statement at arbitrary points for readbility.
+
+<br/>
+
+```
+# Subsetting on a single condition
+cell_df_sub.loc[(cell_df_sub['tree_ident'] == 1),]
+
+# Subsetting on multiple conditions.
+cell_df_sub.loc[
+    (cell_df_sub['tree_ident'] == 1) | \
+    (cell_df_sub['tree_ident'] == 2) & \
+    (cell_df_sub['n_genes'] > 1000),]
+```
+
+<br/>
+What's actually going on here? The rows in the data frame are actually subsetted on a vector of True/False statements. That is, for every condition that is True for all statements, a row will be returned. If remove the boonlean statements placed within cell_df_sub.loc[], you can see why this is occuring.
+<br/>
+
+```
+cell_df_sub['tree_ident'] == 1 | \
+    (cell_df_sub['tree_ident'] == 2) & \
+    (cell_df_sub['n_genes'] > 1000)
+```
+
+
+
+
 
 
 

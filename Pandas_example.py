@@ -42,8 +42,7 @@ cell_attributes.iloc[:5,[0,1,3,5,7]].head(10)
 cell_attributes.iloc[:5, 0:3 + 7].head(10)
 
 
-
-# Conditional subset
+# Ordering
 
 # Let's make a smaller dataset to work with
 cell_df_sub = cell_attributes.iloc[:25,[0,1,3,5]]
@@ -52,8 +51,22 @@ cell_df_sub = cell_attributes.iloc[:25,[0,1,3,5]]
 cell_df_sub.sort_values('n_counts', ascending=False)
 
 # Sort by multiple columns in different directions
-cell_df_sub.sort_values(by=['tree_ident', 'n_counts'], ascending=[True, False])
+cell_df_sub.sort_values(
+    by=['tree_ident', 'n_counts'], ascending=[True, False])
+
+
+# Conditional subset
+cell_df_sub.loc[(cell_df_sub['tree_ident'] == 1),]
+
+# Note: Pandas uses a pipe symbol to represent "or", and an ampersand symbol instead of "and"
+cell_df_sub.loc[
+    (cell_df_sub['tree_ident'] == 1) | \
+    (cell_df_sub['tree_ident'] == 2) & \
+    (cell_df_sub['n_genes'] > 1000) 
+    ,]
 
 
 
 
+# Not usig loc will return a single column
+(cell_df_sub['tree_ident'] == 1) & (cell_df_sub['n_counts'] > 2000)
