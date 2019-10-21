@@ -151,7 +151,7 @@ cell_attributes.iloc[:5, 0:3 + 7].head(10)
 
 ### Ordering dataframes by column values
 
-Here we'll take look at ordering our data by a particular column value, or multiple column values. The only subsetting we'll use is to create a minimal example.
+Here we'll take look at ordering our data by a particular column value, or multiple column values.
 
 <br/>
 
