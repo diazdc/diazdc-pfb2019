@@ -58,7 +58,7 @@ If you frequently work dataframes or matricies, please consider reading this
 
 ![](https://miro.medium.com/max/2060/1*p4zjrqG97C4bFmOXU5UQog.png)
 
-<img src="https://miro.medium.com/max/2060/1*p4zjrqG97C4bFmOXU5UQog.png" width="75%" height="75%" />
+<img src="https://miro.medium.com/max/2060/1*p4zjrqG97C4bFmOXU5UQog.png" width="50%" height="50%" />
 
 ## Pandas has the ability to read in various data formats
 
