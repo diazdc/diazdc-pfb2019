@@ -42,6 +42,16 @@ A data frame is a table-like data structure and can cotain mixed data types (str
 
 <br/>
 
+## Pandas has the ability to read in various data formats
+
+<br/>
+
+- Open a local file using Pandas, usually a CSV file, but could also be a delimited text file (like TSV), Excel, etc
+
+- Open a remote file or database like a CSV or a JSONon a website through a URL or read from a SQL table/database
+
+<br/>
+
 ## A brief word on vectorization
 
 **Operations in Pandas, like R, work most efficiently when vectorized**<br/>
@@ -57,12 +67,6 @@ If you frequently work dataframes or matricies, please consider reading this
 [stackoverflow thread](https://stackoverflow.com/questions/35091979/why-is-vectorization-faster-in-general-than-loops).
 
 <img src="https://miro.medium.com/max/2060/1*p4zjrqG97C4bFmOXU5UQog.png" width="75%" height="75%" />
-
-## Pandas has the ability to read in various data formats
-
-- Open a local file using Pandas, usually a CSV file, but could also be a delimited text file (like TSV), Excel, etc
-
-- Open a remote file or database like a CSV or a JSONon a website through a URL or read from a SQL table/database
 
 <br/>
 
