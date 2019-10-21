@@ -170,18 +170,24 @@ cell_df_sub.sort_values(by=['tree_ident', 'n_counts'], ascending=[True, False])
 
 ### Subsetting data by condition
 
-Understanding how to subset your data using conditional operations is very, _very_ useful. You'll often encounter situations where you want to filter your data on a certain set of parameters to reduce it to a more "meaningful" state (to make your PI happy). 
-
-Notice in the second example we're chaining together boolean operators to achieve results that satisfy multiple conditions. You can make these statments complex as you'd like.
-
-Note: Pandas uses a pipe symbol to represent "or", and an ampersand symbol to represent "and". The backslashes in code simply allow us to break up our statement at arbitrary points for readbility.
+Understanding how to subset your data using conditional operations is very, _very_ useful. You'll often encounter situations where you want to filter your data on a certain set of parameters to reduce it to a more "meaningful" state (to make your PI happy).
 
 <br/>
 
 ```
 # Subsetting on a single condition
 cell_df_sub.loc[(cell_df_sub['tree_ident'] == 1),]
+```
 
+<br/>
+
+In the second example we're chaining together boolean operators to achieve results that satisfy multiple conditions. You can make these statments complex as you'd like.
+
+Note: Pandas uses a pipe symbol to represent "or", and an ampersand symbol to represent "and". The backslashes in code simply allow us to break up our statement at arbitrary points for readbility.
+
+<br/>
+
+```
 # Subsetting on multiple conditions.
 cell_df_sub.loc[
     (cell_df_sub['tree_ident'] == 1) | \
