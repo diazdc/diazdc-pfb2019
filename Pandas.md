@@ -104,6 +104,8 @@ cell_attributes.head(10)
 
 <br/>
 
+#### Slicing
+
 Pandas has different methods for subsetting dataframes.
 We'll dicuss the most common methods, **loc**, and **iloc**
 
