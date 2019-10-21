@@ -16,7 +16,7 @@ A powerful library for manipulating data arranged in formats like matricies and 
 
 So far we've discussed building multidimensional objects like lists of lists and dictionaries of dictionaries from raw data. However, bioinformatics modules (and many others) will often **return** results in the form of Pandas **data frame** or **a matrix**. Further manipulation of these results will require some degree of Pandas operations.
 
-For example, lets say you want to parse your RNA-seq results to a list of genes within a specific range of p-values and log fold changes, like "all p-values less than 1e-15 and log fold changes greater than 1.2". You can apply your knowledge of Python operators such as `and, >, <` to subset a data frame based on the afformentioned parameters.
+For example, lets say you want to parse your RNA-seq results to a list of genes within a specific range of p-values and log fold changes, like "all p-values less than `1e-15` and log fold changes greater than `1.2`". You can apply your knowledge of Python operators such as `and, >, <` to subset a data frame based on the afformentioned parameters.
 
 <br/>
 
