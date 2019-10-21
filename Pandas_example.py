@@ -1,6 +1,6 @@
 import pandas as pd
 
-cell_attributes = pd.read_csv("./meta_data.csv", index_col = 0)
+cell_attributes = pd.read_csv("./meta_data.csv", index_col=0)
 type(cell_attributes)
 
 # We notice rows and columns are truncated with the dimensions given the bottom
@@ -42,7 +42,18 @@ cell_attributes.iloc[:5,[0,1,3,5,7]].head(10)
 cell_attributes.iloc[:5, 0:3 + 7].head(10)
 
 
-# Subsetting by condition
+
+# Conditional subset
+
+# Let's make a smaller dataset to work with
+cell_df_sub = cell_attributes.iloc[:25,[0,1,3,5]]
+
+# Set ascending=True to reverse the order
+cell_df_sub.sort_values('n_counts', ascending=False)
+
+# Sort by multiple columns in different directions
+cell_df_sub.sort_values(by=['tree_ident', 'n_counts'], ascending=[True, False])
+
 
 
 

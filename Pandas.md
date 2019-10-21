@@ -70,13 +70,14 @@ If you frequently work dataframes or matricies, please consider reading this
 
 ## Basic methods for data manipulation
 
-### Reading in csv files
+### Reading in csv files and basic slicing operations
 
 <br/>
 
 ```
 import pandas as pd
 
+# Setting index_col to 0 tells us that the first column contains the row names
 cell_attributes = pd.read_csv("./meta_data.csv", index_col = 0)
 type(cell_attributes)
 ```
@@ -138,6 +139,37 @@ cell_attributes.iloc[:5,[0,1,3,5,7]].head(10)
 # Return rows 1 through 5, columns 1 through 3, and column 7
 cell_attributes.iloc[:5, 0:3 + 7].head(10)
 ```
+
+<br/>
+
+### Ordering dataframes by column values
+
+Here we'll take look at ordering our data by a particular column value, or multiple column values. The only subsetting we'll use is to create a minimal example.
+
+<br/>
+
+```
+# Let's make a smaller dataset to work with
+cell_df_sub = cell_attributes.iloc[:25,[0,1,3,5]]
+
+# Set ascending=True to reverse the order
+cell_df_sub.sort_values('n_counts', ascending=False)
+
+# Sort by multiple columns in different directions
+cell_df_sub.sort_values(by=['tree_ident', 'n_counts'], ascending=[True, False])
+```
+
+<br/>
+
+### Subsetting data by condition
+
+Understanding how to subset your data using conditional operations is very, _very_ useful. You'll often encounter situations where you want to filter your data on a certain set of parameters to reduce it to a more "meaningful" state (to make your PI happy).
+
+
+
+
+
+
 
 
 
