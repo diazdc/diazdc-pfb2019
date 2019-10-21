@@ -56,9 +56,7 @@ If you frequently work dataframes or matricies, please consider reading this
 [article](https://engineering.upside.com/a-beginners-guide-to-optimizing-pandas-code-for-speed-c09ef2c6a4d6) and this
 [stackoverflow thread](https://stackoverflow.com/questions/35091979/why-is-vectorization-faster-in-general-than-loops).
 
-![](https://miro.medium.com/max/2060/1*p4zjrqG97C4bFmOXU5UQog.png)
-
-<img src="https://miro.medium.com/max/2060/1*p4zjrqG97C4bFmOXU5UQog.png" width="50%" height="50%" />
+<img src="https://miro.medium.com/max/2060/1*p4zjrqG97C4bFmOXU5UQog.png" width="75%" height="75%" />
 
 ## Pandas has the ability to read in various data formats
 
