@@ -107,7 +107,7 @@ cell_attributes.head(10)
 Pandas has different methods for subsetting dataframes.
 We'll dicuss the most common methods, **loc**, and **iloc**
 
-loc allows us to subset data by row or column label. For example, if I would
+**loc** allows us to subset data by row or column label. For example, if I would
 like to subset the column 'n_counts', I would use the following command:
 
 <br/>
@@ -119,7 +119,7 @@ cell_attributes.loc[:,'n_counts']
 
 <br/>
 
-iloc allows us to subset rows and colums by index number. This is useful if we want to subset multiple rows or columns without typing index names. Lets say we want to remove the columns with names 'orig_ident', 'res_2', and 'louvain'.
+**iloc** allows us to subset rows and colums by index number. This is useful if we want to subset multiple rows or columns without typing index names. Lets say we want to remove the columns with names 'orig_ident', 'res_2', and 'louvain'.
 
 Lets take a look at the column names first and see if we can slice out the ones we'd like to keep.
 
@@ -184,7 +184,7 @@ cell_df_sub.loc[(cell_df_sub['tree_ident'] == 1),]
 
 In the second example we're chaining together boolean operators to achieve results that satisfy multiple conditions. You can make these statments complex as you'd like.
 
-Note: Pandas uses a pipe symbol to represent "or", and an ampersand symbol to represent "and". The backslashes in code simply allow us to break up our statement at arbitrary points for readbility.
+Note: Pandas uses a pipe symbol to represent `or`, and an ampersand symbol to represent `and`. The backslashes in code simply allow us to break up our statement at arbitrary points for readbility.
 
 <br/>
 
@@ -198,7 +198,7 @@ cell_df_sub.loc[
 
 <br/>
 
-What's actually going on here? The rows in the data frame are actually subsetted on a vector of True/False statements. That is, for every condition that is True for all statements, a row will be returned. If we remove the boonlean statements placed within cell_df_sub.loc[], you can see why this is occuring.
+What's actually going on here? The rows in the data frame are actually subsetted on a vector of True/False statements. That is, for every condition that is True for all statements, a row will be returned. If we remove the boonlean statements placed within `cell_df_sub.loc[]`, you can see why this is occuring.
 
 <br/>
 
