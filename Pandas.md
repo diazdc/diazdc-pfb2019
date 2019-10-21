@@ -62,9 +62,11 @@ Rather that looping through individual values (scalars), we _apply_ operations t
 
 If you frequently work dataframes or matricies, please consider reading this 
 [article](https://engineering.upside.com/a-beginners-guide-to-optimizing-pandas-code-for-speed-c09ef2c6a4d6) and this
-[stackoverflow thread](https://stackoverflow.com/questions/35091979/why-is-vectorization-faster-in-general-than-loops).
+[stackoverflow thread](https://stackoverflow.com/questions/35091979/why-is-vectorization-faster-in-general-than-loops) for a detailed explanation.
 
-<img src="https://miro.medium.com/max/2060/1*p4zjrqG97C4bFmOXU5UQog.png" width="75%" height="75%" />
+<br/>
+
+<img src="https://miro.medium.com/max/2060/1*p4zjrqG97C4bFmOXU5UQog.png" width="80%" height="80%" />
 
 <br/>
 
