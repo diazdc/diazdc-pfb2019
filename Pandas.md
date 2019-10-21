@@ -66,8 +66,9 @@ If you frequently work dataframes or matricies, please consider reading this
 
 - Open a remote file or database like a CSV or a JSONon a website through a URL or read from a SQL table/database
 
+<br/>
 
-# Basic methods for data manipulation
+## Basic methods for data manipulation
 
 ### Reading in csv files
 
