@@ -72,6 +72,8 @@ If you frequently work dataframes or matricies, please consider reading this
 
 ### Reading in csv files
 
+<br/>
+
 ```
 import pandas as pd
 
@@ -79,6 +81,7 @@ cell_attributes = pd.read_csv("./meta_data.csv", index_col = 0)
 type(cell_attributes)
 ```
 
+<br/>
 
 ```
 # We notice rows and columns are truncated with the dimensions given the bottom
@@ -92,18 +95,26 @@ pd.set_option('display.max_columns', 100)
 cell_attributes.head(10)
 ```
 
+<br/>
+
 Pandas has different methods for subsetting dataframes.
 We'll dicuss the most common methods, **loc**, and **iloc**
 
 loc allows us to subset data by row or column label. For example, if I would
 like to subset the column 'n_counts', I would use the following command:
 
+<br/>
+
 ```
 # The comma separates rows and columns, and the colon returns all rows.
 cell_attributes.loc[:,'n_counts']
 ```
 
+<br/>
+
 iloc allows up to subset rows and colums by index number. This is useful if we want to subset multiple rows or columns without typing index names. Lets say we want to remove the columns with names 'orig_ident', 'res_2', and 'louvain'.
+
+<br/>
 
 ```
 # Return column names
@@ -111,7 +122,11 @@ cell_attributes.columns.values
 cell_attributes.columns.values[[0,1,3,5,7]]
 ```
 
+<br/>
+
 Now we can apply the same indexing pattern to our **iloc** method to return only the columns we're interested in. I've also included a few more slicing variations so you can get a feel for more complex slicing patterns.
+
+<br/>
 
 ```
 # Return columns 0, 1, 3, 5, and 7
