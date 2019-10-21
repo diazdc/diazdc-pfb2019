@@ -186,7 +186,9 @@ cell_df_sub.loc[
 ```
 
 <br/>
+
 What's actually going on here? The rows in the data frame are actually subsetted on a vector of True/False statements. That is, for every condition that is True for all statements, a row will be returned. If remove the boonlean statements placed within cell_df_sub.loc[], you can see why this is occuring.
+
 <br/>
 
 ```
