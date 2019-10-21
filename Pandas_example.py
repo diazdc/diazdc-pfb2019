@@ -24,7 +24,6 @@ cell_attributes.loc[:,'n_counts']
 
 # The comma separates rows and columns. The colon returns all rows.
 
-
 # iloc allows up to subset rows and colums by index number. This is useful
 # if we have a list of values that we would like parse our data frame by.[2,4,6]
 
