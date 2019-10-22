@@ -40,6 +40,18 @@ cell_attributes.iloc[:5,[0,1,3,5,7]].head(10)
 # Print rows 1 through 5, columns 1 through 3, and column 7
 cell_attributes.iloc[:5, 0:3 + 7].head(10)
 
+# the method r_ allows us to slice with multiple ranges
+from numpy import r_
+
+# Let's see what it returns before we slice our data frame
+pd.np.r_[1:2, 4, 5:7]
+
+# With column names
+cell_attributes.columns.values[pd.np.r_[1:2, 4, 5:7]]
+
+# With the first 5 rows of the data frame
+cell_attributes.iloc[:5,pd.np.r_[1:3, 5:7]]
+
 
 # Ordering
 
