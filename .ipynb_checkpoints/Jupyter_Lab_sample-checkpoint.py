@@ -1,19 +1,25 @@
+import os
+import re
+os.getcwd()
 
 
-with open("Python/data/alpaca_transcriptionFactors_genes.tsv") as tf:
-  firstline=True
-  for line in tf:
-    if firstline:
-      firstline=False
-      continue
-    line=line.rstrip()
-    transcription_factors.add(line)
+num = 6
+if num < 0:
+    print('negative')
+elif num == 0:
+    print('equal to 0')
+elif (num < 50) & (num % 2 == 0):
+    print('num is positve, less than 50, and even')
 
-"""
-Using __init__
-"""
-# test
-# works
+
+line_number = 1
+with open('Python/data/Python_07_nobody.txt') as nobody:
+    for line_number, line in enumerate(nobody):
+        for found in re.finditer(r"Nobody", line):
+            print("Found match in line {} pos {}".format(
+                line_number, found.start()+1))
+
+            
 class DNARecord(object):
     def __init__(self, sequence, gene_name, species_name):
         self.sequence = sequence

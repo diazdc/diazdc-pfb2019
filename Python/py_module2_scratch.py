@@ -8,7 +8,7 @@ seq1 = "GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA"
 if 'ATG' in seq1:
     print('Bob')
 else:
-    print('Joe')
+    print('Sam')
 
 
 if 'ATG' in seq1:

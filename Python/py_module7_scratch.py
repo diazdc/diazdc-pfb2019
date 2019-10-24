@@ -30,7 +30,7 @@ for line in re.finditer(r'(Nobody)', poem_contents, re.I):
 print('Done!')
 
 
-# Me trying my own solution
+#  my solution
 del(poem_contents)
 line_number = 1
 with open('./data/Python_07_nobody.txt', 'r') as poem_contents:
