@@ -11,7 +11,6 @@ elif num == 0:
 elif (num < 50) & (num % 2 == 0):
     print('num is positve, less than 50, and even')
 
-
 line_number = 1
 with open('Python/data/Python_07_nobody.txt') as nobody:
     for line_number, line in enumerate(nobody):
@@ -41,10 +40,23 @@ class DNARecord(object):
         at_content = (a_count + t_count) / length 
         return at_content
 
-
 ## Create new DNARecord Objects with user defined data
 dna_rec_obj_1 = DNARecord('ACTGATCGTTACGTACGAGT', 'ABC1', 'Drosophila melanogaster')
 dna_rec_obj_2 = DNARecord('ATATATTATTATATTATA', 'COX1', 'Homo sapiens')
 
 for d in [ dna_rec_obj_1, dna_rec_obj_2 ]:
   print('name:' , d.gene_name , ' ' , 'seq:' , d.sequence)
+
+
+# Show console figures
+import os
+import pandas as pd
+from matplotlib import pyplot as plt
+
+os.chdir('/Users/ddiaz/Documents/diazdc-pfb2019/')
+cell_attributes = pd.read_csv("./meta_data.csv", index_col=0)
+cell_df_sub = cell_attributes.iloc[:10,[0,1,3,5]]
+
+%matplotlib inline
+cell_df_sub.loc[:,'n_counts'].plot.kde()
+cell_df_sub.loc[:,'n_genes'].plot.kde()
